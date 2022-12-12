@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .playerA 
+    {
+        margin-right: 295px;
+        margin-bottom: 20px;
+
+    }
+
+    .playerB
+    {
+        margin-right: 0px;
+        margin-left: 295px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+.board {
+    background-color: #f4f0e7;
+    height: 500px;
+    /* margin: auto auto; */
+    margin: 0 5%;
+    width: 500px; 
+    }
+
+.board .row1,
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    border: 1.25px solid black;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board .column2 {
+    margin-left: 100px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dice {
+    width: 375px;
+    height: 375px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightcyan;
+}
+
+.reset 
+{
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.reset:active{
+background-color: grey;
+}
+
+.inpur:active
+{
+    background-color: grey;
+}
+
+.dice .content {
+    width: 185px;
+    height: 185px;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+
+
+}
+
+.dice.content .turn,
+.roll,
+.appear,
+.turn {
+    width: 183px;
+    height: 58px;
+    border: 2px solid black;
+}
+
+.turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+
+}
+
+.roll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.roll:hover {
+    background-color: aquamarine;
+}
+
+.roll:active {
+    background-color: green;
+}
+
+.appear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-weight: 900;
+    /* font-size: 20px; */
+}
+
+.playerA {
+    background-color: pink;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    height: 125px;
+    width: 200px;
+
+
+}
+
+.playerB {
+    background-color: lightskyblue;
+}
+
+.playerA .button {
+    background-color: white;
+    width: 50px;
+    margin: 5px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+    font-weight: 500;
+}
+
+.playerA .button:hover {
+    background-color: rgb(223, 222, 222);
+}
+
+.playerA .button:active {
+    background-color: grey;
+}
+
+
+.red1 {
+    display: none;
+    height: 18px;
+    background-color: red;
+    width: 18px;
+    border-radius: 100%;
+    margin: 2px;
+    border: 2px solid black;
+}
+
+.red2 {
+    display: none;
+
+    height: 18px;
+    background-color: red;
+    width: 18px;
+    border-radius: 100%;
+    margin: 2px;
+    border: 2px solid black;
+
+
+}
+
+.blue1 {
+    display: none;
+
+    height: 18px;
+    background-color: blue;
+    width: 18px;
+    border-radius: 100%;
+    margin: 2px;
+    border: 2px solid black;
+
+
+}
+
+.blue2 {
+    display: none;
+
+    height: 18px;
+    background-color: blue;
+    width: 18px;
+    border-radius: 100%;
+    margin: 2px;
+    border: 2px solid black;
+
+}
+
+.cell-1 {
+    background-color: #e06666;
+}
+
+.cell-28 {
+    background-color: #ea9999;
+}
+
+.cell-15 {
+    background-color: #6fa8dc;
+}
+
+.cell-14 {
+    background-color: #9fc5e8;
+}
+
+.hide {
+    height: 370px;
+}
+
+.page {
+    transform: scale(0.8);
+}
+
+.cell-28 .red1 {
+    background-color: grey;
+}
+
+.cell-28 .red2 {
+    background-color: grey;
+}
+
+.cell-14 .blue1 {
+    background-color: grey;
+}
+
+.cell-14 .blue2 {
+    background-color: grey;
+}
